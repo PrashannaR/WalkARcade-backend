@@ -22,5 +22,6 @@ from WalkARcade import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('leaderboard/', views.leaderboards),
+    path('leaderboard/<str:username>/', views.getUser),
    
 ]
