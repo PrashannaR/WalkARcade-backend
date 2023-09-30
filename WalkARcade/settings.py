@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework.authtoken', #for the token authentication
     'rest_framework', 
     'WalkARcade',
     'django.contrib.admin',

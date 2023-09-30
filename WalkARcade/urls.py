@@ -18,11 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from WalkARcade import views
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('leaderboard/', views.leaderboards),#get all the users
-    path('leaderboard/<str:username>/', views.getUser), #get single user
-    path('register/', views.register_user), #register user
-   
+    path('leaderboard/', views.leaderboards),  # get all the users
+    path('leaderboard/<str:username>/', views.getUser),  # get single user
+    path('register/', views.register_user),  # register user
+    path('login/', views.user_login),  # login user
 ]
